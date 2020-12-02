@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title> - jsFiddle demo</title>
+  <script type='text/javascript' src='//code.jquery.com/jquery-1.10.1.js'></script>
+  <style type='text/css'>
+.mp3Player {
+    padding:8px;
+    margin:8px;
+    background-color:#ddf;
+}
+  </style>
+
+<script type='text/javascript'>//<![CDATA[ 
+
+jQuery(function (){
+    var myAudio = document.getElementById("myAudio");
+    var current = null;
+    var playingString = "<span aria-hidden=\"true\" data-icon=\"&#xe002;\"></span><span class=\"screen-reader-text\">Pause</span>";
+    var pausedString = "<span aria-hidden=\"true\" data-icon=\"&#xe003;\"></span><span class=\"screen-reader-text\">Play</span>";
+    $(document.body).on('click', '.btnPlayPause',function(e){
+        var target = this;
+        //console.log(target, current); //return;
+        if (current == target) {
+            target.innerHTML = pausedString;
+            target.parentNode.setAttribute('data-pos', myAudio.currentTime); //start from paused
+            myAudio.pause();
+            current = null;
+        } else { // current!=target
+            if (current != null) {
+                current.innerHTML = pausedString;
+                current.parentNode.setAttribute('data-pos', '0'); //reset position
+                target.parentNode.setAttribute('data-pos', myAudio.currentTime); //start from paused
+            }
+            current = target;
+            target.innerHTML = playingString;
+            if(myAudio.canPlayType && myAudio.canPlayType("audio/mpeg") != "") { // MP3
+                myAudio.src = target.parentNode.getAttribute('data-src');
+            } else if(myAudio.canPlayType && myAudio.canPlayType("audio/ogg") != "") {  // OGG
+                myAudio.src = target.parentNode.getAttribute('data-src2');
+            } else {
+                return; // no audio support
+            }
+            myAudio.play();
+            myAudio.onloadeddata = function () {
+                myAudio.currentTime = parseFloat(target.parentNode.getAttribute('data-pos'));
+            };
+        }
+    });
+    $(document.body).on('click', '.btnMute',function(e){
+        myAudio.muted = !myAudio.muted;
+        $('.btnMute').each(function(){
+            if (myAudio.muted) {
+                this.innerHTML = "<span aria-hidden=\"true\" data-icon=\"&#xe001;\"></span><span class=\"screen-reader-text\">Muted</span>";
+            } else {
+                this.innerHTML = "<span aria-hidden=\"true\" data-icon=\"&#xe000;\"></span><span class=\"screen-reader-text\">Audible</span>";
+            }
+        });
+    });
+});
+
+//]]>  
+</script>
+</head>
+<body>
+
+<audio id="myAudio"></audio>
+
+<div class="mp3Player" data-src="a.mp3" data-src2="a.ogg" data-pos="0">
+    <button class="btnPlayPause button">►||</button>
+    <button class="btnMute button">MUTE</button>
+    <span class="infoLabel">Audio #1</span>
+</div>
+
+<div class="mp3Player" data-src="b.mp3" data-src2="b.ogg" data-pos="0">
+    <button class="btnPlayPause button">►||</button>
+    <button class="btnMute button">MUTE</button>
+    <span class="infoLabel">Audio #2</span>
+</div>
+
+</body>
+</html>
