@@ -10,20 +10,45 @@
   <source src="sounds/summertimenormal.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
-  <audio id="myAudio2">
+ 
+ <audio id="myAudio2">
   <source src="sounds/summertime70" type="audio/ogg">
   <source src="sounds/summertime70.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
-
+  
+<audio id="myAudio3">
+  <source src="sounds/summertimeserious" type="audio/ogg">
+  <source src="sounds/summertimeserious.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 <p>Click the buttons to play or pause the audio.</p>
 
-<button onclick="playAudio()" type="button">Normal</button>
-  <button onclick="playAudio()" type="button">Moderat</button>
+<button onclick="playAudio(myAudio1)" type="button">Normal</button>
+<button onclick="playAudio(myAudio2)" type="button">Moderat</button>
+<button onclick="playAudio(myAudio3)" type="button">Alvorlig</button>
 <button onclick="pauseAudio()" type="button">Pause Audio</button> 
 
 <script>
-var x = document.getElementById("myAudio2"); 
+var x = document.getElementById("myAudio1"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+  var x = document.getElementById("myAudio2"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+  var x = document.getElementById("myAudio3"); 
 
 function playAudio() { 
   x.play(); 
