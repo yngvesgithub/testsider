@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html><head>
+    <title>Sidemeny og slide</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {box-sizing:border-box}
+        body {font-family: Verdana,sans-serif;margin:0}
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 600px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor:pointer;
+            height: 13px;
+            width: 13px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .slprev, .slnext,.text {font-size: 11px}
+        }
+    </style>
+</head>
+<body>
+
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="http://interaktivideo.github.io/start.html">Tema 1</a>
+    <a href="http://interaktivideo.github.io/tema2.html">Tema 2</a>
+    <a href="http://interaktivideo.github.io/videoshow.html">Tema 3</a>
+    <a href="http://interaktivideo.github.io/spor.html">Tema 4</a>
+    <a href="http://interaktivideo.github.io/bodeog.html">Tema 5</a>
+    <a href="http://interaktivideo.github.io/filosofi.html">Tema 6</a>
+    <a href="http://interaktivideo.github.io/oppsummering.html">Tema 7</a>
+</div>
+
+<div id="main">
+
+    <div class="margin">
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">+ Meny</span>
+
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+
+
+                <div class="numbertext">1 / 3</div>
+                 <audio controls="controls">
+            <source src="sounds/summertime70.mp3" type="audio/mp3" />
+            
+          Your browser does not support the audio tag.
+        </audio>
+
+
+
+
+                <h2 class="sansserif">Tegnspråktolken er både elev og tolk</h2>
+                <p>Tegnspråktolken er venninne med den døve jenta. Hun er også elev i klassen men må bruke mye av tiden til tolkning istedet for følge med i undervisningen.
+                    Det er uvisst hvilket utbytte hun har av undervisningen.</p>
+
+
+            </div>
+
+            <div class="mySlides fade">
+
+
+                <div class="numbertext">2 / 3</div>
+
+                <img src="http://interaktivideo.github.io/images/deafgirlclose.jpg" alt="" style="width:100%;height:100%;">
+
+
+
+
+                <h2 class="sansserif">Kun en elev er døv</h2>
+                <p>Den døve jenta er eneste døve eleven i denne klassen. Hun er heldig som har en venninne som kan tolke for henne. Kunne hun gått i denne klassen med hørende uten denne venninnen?</p>
+            </div>
+
+            <div class="mySlides fade">
+
+
+                <div class="numbertext">3 / 3</div>
+                <img src="http://interaktivideo.github.io/images/classtotal.jpg" alt="" style="width:100%;height:100%;">
+
+
+
+
+                <h2 class="sansserif">Kan de andre elevene kommuniserere med den døve jenta?</h2>
+                <p>Ingen av de andre elevene behersker tegnspråk. Læreren kan det til en viss grad, men hun kan ikke bruke tiden til først å si noe oralt og deretter tolke.
+                    De andre elevene har respekt for den døve jenta men kommunikasjonen mellom dem er minimal. </p>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length} ;
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].classList.remove("active");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].classList.add("active");
+            }
+        </script>
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+</div>
+</body>
+</html>
