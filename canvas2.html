@@ -3,8 +3,12 @@
 
 <canvas id="myCanvas" width="600" height="400"
 style="border:1px solid #000000;">
-  <h2>Tittel</h2>
-  <p>Tekst</p>
+ <script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.font = "30px Arial";
+ctx.fillText("Hello World",10,50);
+</script>
 </canvas>
 
 </body>
