@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour appversion="5.2 beta4" apprev="15957" start="node1">
+  <panorama id="node1">
+    <input levelingpitch="0" overlap="1" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510" levelingroll="0" height="320" width="320" levelbias="0.400" levelbiashidpi="0.400">
+      <level predecode="1" preload="1" height="320" width="320"/>
+      <preview strip="1" color="0x808080"/>
+      <video endaction="loop" format="equirectangular">
+        <source url="https://www.youtube.com/embed/OiV1Djyojv8"/>
+      </video>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start pan="0" projection="4" tilt="0" fov="70"/>
+      <flyin pan="0" projection="9" tilt="-90" fov="170"/>
+      <min pan="-180" tilt="-60.4952" fov="5"/>
+      <max fovfisheye="360" pan="180" fovstereographic="270" tilt="60.4952" fov="120"/>
+    </view>
+    <userdata description="" source="" comment="" longitude="" title="360-video om Forskningsparken" copyright="FFS" customnodeid="" tags="hotspotvideo" latitude="" info="bla bla" author="Laget av Yngve" datetime="2017"/>
+    <hotspots wordwrap="1" height="30" width="240">
+      <label enabled="1" background="1" backgroundcolor="0xffffff" wordwrap="1" borderradius="1" bordercolor="0x000000" textalpha="1" backgroundalpha="1" border="1" height="30" textcolor="0x000000" width="240" borderalpha="1"/>
+      <polystyle backgroundcolor="0x0000ff" bordercolor="0x0000ff" handcursor="1" mode="0" backgroundalpha="0.2509803921568627" borderalpha="1"/>
+      <hotspot id="Point01" description="Seksjon for forskning- og formidlingsstøtte" pan="130.17" title="Besøk FP" target="" url="{node4}" skinid="ht_node" tilt="5.37"/>
+    </hotspots>
+    <media/>
+    <transition enabled="1" blendtime="1" zoomoutpause="1" zoomspeed="2" zoomfov="20" zoomin="0" softedge="0" blendcolor="0x000000" type="crossdissolve" zoomout="0"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0"/>
+    <control contextfullscreen="0" sensitivity="8" rubberband="0" speedwheel="1" simulatemass="1" lockedmouse="0" lockedkeyboard="0" hideabout="0" invertwheel="0" lockedwheel="0" lockedkeyboardzoom="0" contextprojections="0" dblclickfullscreen="0" invertcontrol="1"/>
+  </panorama>
+  <panorama id="node4">
+    <input levelingpitch="0" overlap="1" leveltileurl="tiles/node4/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510" levelingroll="0" height="960" width="960" levelbias="0.400" levelbiashidpi="0.400">
+      <level predecode="0" preload="0" height="960" width="960"/>
+      <level predecode="1" preload="1" height="480" width="480"/>
+      <preview strip="1" color="0x808080"/>
+      <video endaction="loop" format="equirectangular">
+        <source url="videos/torgpremiere.MP4"/>
+      </video>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start pan="0" projection="4" tilt="0" fov="70"/>
+      <flyin pan="0" projection="9" tilt="-90" fov="170"/>
+      <min pan="0" tilt="-90" fov="5"/>
+      <max fovfisheye="360" pan="360" scaletofit="1" fovstereographic="270" tilt="90" fov="120"/>
+    </view>
+    <userdata description="" source="" comment="" longitude="" title="" copyright="" customnodeid="" tags="d" latitude="" info="" author="" datetime="25.04.2017 09.04"/>
+    <hotspots wordwrap="1" height="30" width="240">
+      <label enabled="1" background="1" backgroundcolor="0xffffff" wordwrap="1" borderradius="1" bordercolor="0x000000" textalpha="1" backgroundalpha="1" border="1" height="30" textcolor="0x000000" width="240" borderalpha="1"/>
+      <polystyle backgroundcolor="0x0000ff" bordercolor="0x0000ff" handcursor="1" mode="0" backgroundalpha="0.2509803921568627" borderalpha="1"/>
+      <hotspot id="Point01" description="" pan="-15.68" title="Redigering" target="" url="{node4}" skinid="ht_node" tilt="12.56"/>
+      <hotspot id="Point02" description="" pan="-151.33" title="Mer om FFS" target="_blank" url="http://www.uv.uio.no/om/organisasjon/adm/ffs/" skinid="ht_url" tilt="-6.48"/>
+      <hotspot id="Point03" description="" pan="168.84" title="Seljefløyten" target="" url="{node6}" skinid="ht_node" tilt="-4.5"/>
+    </hotspots>
+    <media/>
+    <transition enabled="1" blendtime="1" zoomoutpause="1" zoomspeed="2" zoomfov="20" zoomin="0" softedge="0" blendcolor="0x000000" type="crossdissolve" zoomout="0"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0"/>
+    <control contextfullscreen="0" sensitivity="8" rubberband="0" speedwheel="1" simulatemass="1" lockedmouse="0" lockedkeyboard="0" hideabout="0" invertwheel="0" lockedwheel="0" lockedkeyboardzoom="0" contextprojections="0" dblclickfullscreen="0" invertcontrol="1"/>
+  </panorama>
+  <panorama id="node6">
+    <input levelingpitch="0" overlap="1" leveltileurl="tiles/node6/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510" levelingroll="0" height="640" width="640" levelbias="0.400" levelbiashidpi="0.400">
+      <level predecode="0" preload="0" height="640" width="640"/>
+      <level predecode="1" preload="1" height="320" width="320"/>
+      <preview strip="1" color="0x808080"/>
+      <video endaction="loop" format="equirectangular">
+        <source url="videos/selje.mp4"/>
+      </video>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start pan="0" projection="4" tilt="0" fov="70"/>
+      <flyin pan="0" projection="9" tilt="-90" fov="170"/>
+      <min pan="0" tilt="-90" fov="5"/>
+      <max fovfisheye="360" pan="360" scaletofit="1" fovstereographic="270" tilt="90" fov="120"/>
+    </view>
+    <userdata description="" source="" comment="" longitude="" title="" copyright="" customnodeid="" tags="d" latitude="" info="" author="" datetime="02.04.2017 21.09"/>
+    <hotspots wordwrap="1" height="30" width="240">
+      <label enabled="1" background="1" backgroundcolor="0xffffff" wordwrap="1" borderradius="1" bordercolor="0x000000" textalpha="1" backgroundalpha="1" border="1" height="30" textcolor="0x000000" width="240" borderalpha="1"/>
+      <polystyle backgroundcolor="0x0000ff" bordercolor="0x0000ff" handcursor="1" mode="0" backgroundalpha="0.2509803921568627" borderalpha="1"/>
+      <hotspot id="Point01" description="" pan="-61.04" title="Til UiO" target="" url="{node1}" skinid="ht_node" tilt="3"/>
+      <hotspot id="Point02" description="" pan="-28.92" title=" Om Seljefløyten" target="_blank" url="http://www.kjentmannsmerket.org/Seljefloyten.htm" skinid="ht_url" tilt="26.28"/>
+    </hotspots>
+    <media/>
+    <transition enabled="1" blendtime="1" zoomoutpause="1" zoomspeed="2" zoomfov="20" zoomin="0" softedge="0" blendcolor="0x000000" type="crossdissolve" zoomout="0"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0"/>
+    <control contextfullscreen="0" sensitivity="8" rubberband="0" speedwheel="1" simulatemass="1" lockedmouse="0" lockedkeyboard="0" hideabout="0" invertwheel="0" lockedwheel="0" lockedkeyboardzoom="0" contextprojections="0" dblclickfullscreen="0" invertcontrol="1"/>
+  </panorama>
+</tour>
