@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body, html {
+    height: 100%;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('./images/braille.jpg');
+ 
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat:repeat-x;
+    background-size: cover;
+}
+.sortboks{
+    position: absolute;
+    color: white;
+    opacity: 1;
+    top: 100px;
+    left: 450px;
+    z-index: 3;
+        text-align: center;
+        font-size: 120px;
+        font-family: arial;
+
+   
+}
+.hvitboks {
+    position:fixed;
+    color: black;
+    background-color: white;
+    top: 20px;
+    left: 20px;
+    z-index: 0;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    font-size: 20px;
+}
+h2.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#menu_detail {
+    display: none;
+}
+
+</style>
+</head>
+<script>
+    var menuDisplayState = 'none';
+    
+    function toggleMenu() {
+        if (menuDisplayState === 'block') {
+            menuDisplayState = 'none';
+        } else {
+            menuDisplayState = 'block';
+        }
+        document.getElementById('menu_detail').style.display=menuDisplayState;
+    }
+    
+</script>
+
+<body>
+
+<div class="parallax"></div>
+
+<div style="height:300px;background-color:white;font-size:28px;">
+Lorem ipsum dolor sit amet, commune definitiones vis at, pro ocurreret molestiae expetendis ea. Sea ne graeco appetere definitiones, quem iudico imperdiet vim cu, has augue luptatum erroribus ea. Mei virtute mnesarchum scripserit in, no eam ipsum dolorem interpretaris, dolor moderatius vis at. Ne augue exerci vim. Mel ne ornatus deterruisset. Ex quo enim sadipscing interpretaris, id pertinax voluptaria vis.
+</div>
+
+<div class="sortboks"><h2 class="sansserif">Tittel på nettside</h2>
+    <img src="./images/tittelnettside.png" alt="tittelnettside" height="80%" width="100%">
+    
+</div>
+<div class="parallax"></div><div> <img src="./images/deafblindgirls.jpg" alt="deafblindgirls" height="100%" width="100%"></div>
+<div style="height:300px;background-color:white;font-size:28px;">
+    Lorem ipsum dolor sit amet, commune definitiones vis at, pro ocurreret molestiae expetendis ea. Sea ne graeco appetere definitiones, quem iudico imperdiet vim cu, has augue luptatum erroribus ea. Mei virtute mnesarchum scripserit in, no eam ipsum dolorem interpretaris, dolor moderatius vis at. Ne augue exerci vim. Mel ne ornatus deterruisset. Ex quo enim sadipscing interpretaris, id pertinax voluptaria vis.
+</div>
+<div><video width="100%" height="100%" controls>
+    <source src="./images/preschoolntinda.mp4" type="video/mp4">
+        <source src="/images/preschoolntinda.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+</video></div>
+
+<div class="parallax"></div>
+
+<div> <img src="./portal_files/klasserom.jpg" alt="classroom" height="100%" width="100%"></div>
+<div class="hvitboks">
+    <button onclick="toggleMenu()"><img src="./images/hamburger.png" alt="hamburger" height="20px" width="20px"></button>
+    <div id="menu_detail">
+        <ul><li><a href="http://www.uio.no/" target="_blank" id="white">Dette er en lang menu</a></li><li>Dette er en enda lengre menu</li><li>Dette er den aller lengste menyen</li></ul>
+    </div>
+</div>
+
+</body>
+</html>
