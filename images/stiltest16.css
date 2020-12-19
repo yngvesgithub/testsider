@@ -1,0 +1,39 @@
+  .gulboks{
+    position: absolute;
+    color: maroon;
+    background-color: blue;
+    top: 1000px;
+    left: 1100px;
+    z-index: 0;
+    width: 300px;
+    height: 150px;
+    padding: 30px;
+    font-size: 20px;
+  }
+
+  .sortboks{
+    position: absolute;
+    color: maroon;
+    background-color: white;
+    top: 2330px;
+    left: 1000px;
+    z-index: 3;
+    width: 300px;
+    height: 150px;
+    padding: 30px;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .oransjeboks{
+    position: absolute;
+    color: maroon;
+    background-color: white;
+    top: 3750px;
+    left: 200px;
+    z-index: 6;
+    width: 400px;
+    height: 250px;
+    padding: 3px;
+font-size: 20px;
+  }
