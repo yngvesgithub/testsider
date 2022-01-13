@@ -1,0 +1,198 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@yngvesgithub 
+yngver
+/
+sansesvikt
+Public
+Code
+Issues
+Pull requests
+2
+Actions
+Projects
+Wiki
+Security
+Insights
+sansesvikt/kombinert.html
+@yngver
+yngver Update kombinert.html
+Latest commit aa1c08a on 10 Feb 2020
+ History
+ 1 contributor
+169 lines (145 sloc)  4.32 KB
+   
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.center {
+	  text-align: center;
+	 background: #4CAF50;
+	 font-family: Arial, Helvetica, sans-serif;
+	  color: #FFFFFF;
+	  border: 3px solid #4CAF50;
+	}
+
+</style>
+</head>
+<body>
+ 
+<div class="topnav" id="myTopnav">
+   <a href="http://yngvesgithub.github.io/testsider/startside.html" class="active">Slektshistorie</a>
+  <a href="http://yngvesgithub.github.io/testsider/anegalleri.html">Anegalleriet</a>
+  <a href="http://yngvesgithub.github.io/testsider/timelineiframe.html">Tidslinjer</a>
+  <a href="http://yngvesgithub.github.io/testsider/elseslekt.html">Elses slekt</a>
+  <a href="http://yngvesgithub.github.io/testsider/yngveslekt.html">Yngves slekt</a>
+  <a href="http://yngvesgithub.github.io/testsider/amerikabrev.html">Amerikabrev</a>
+  <a href="http://http://yngvesgithub.github.io/testsider/minne.html">Til minne om Anna</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+  <div class="center">
+	  <h2>Yngves slekt</h2>
+	</div>
+
+                                                                                        <div style="padding-left:16px">
+
+  <p>Innledende tekst om Yngves slekt</p>
+  
+ 
+
+  <h3>Emner om kombinerte sansetap</h3>
+
+
+<button class="accordion">Spesielle behov</button>
+<div class="panel">
+  <iframe width="639" height="360" src="https://www.youtube.com/embed/I94W_ArLBzA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Kommunikasjonmåter</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Hjelpemidler</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+</div>
+  <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+  <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
