@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+
+<title>Slektshistorie</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="nytre.css">
+
+<style>
+
+  html {
+
+  scroll-behavior: smooth;
+
+}
+
+h1,h2,h3,h4,h5,h6 {font-family: "Roboto"}
+
+body {font-family: "Source Sans Pro"}
+
+</style>
+
+<body class="w3-light-white w3-margin">
+
+
+
+<!-- Navigation bar with links -->
+
+<div class="w3-bar w3-white w3-text-black">
+  <h2 class="w3-left w3-tag w3-green w3-round">SLEKTSHISTORIE</h2>
+ 
+  <a href="indexslekt.html#Yngveslekt" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right" style="margin-top:10px;">YNGVES SLEKT</a>
+  <a href="indexslekt.html#Elseslekt" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right" style="margin-top:10px;">ELSES SLEKT</a>
+  <a href="#indexslekt.html" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right" style="margin-top:10px;">HJEM</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large" style="margin-top:10px;" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div id="demo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-small">
+  <a href="#indexslekt.html" class="w3-bar-item w3-button">HJEM</a>
+  <a href="indexslekt.html#Elseslekt" class="w3-bar-item w3-button">ELSES SLEKT</a>
+  <a href="indexslekt.html#Yngveslekt" class="w3-bar-item w3-button">YNGVES SLEKT</a>
+</div>
+
+
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+
+<h2 class="w3-wide">Til minne om mor</h2>
+      <br>
+     <img class="w3-image" src="images/anna1946.jpg" alt="Anna Cecilie 1946" width="1600" height="1032">
+     <br>
+      <p class="w3-left-align w3-white w3-text-black">
+    Mor døde 14. mai 2020, 98 år gammel. Hun etterlot seg mange fotografier, både av seg selv og av andre familiemedlemmer. Siden bildene antageligvis er av interesse for flere, er de scannet og gjort tilgjengelige. 
+På baksiden av noen av bildene er det skrevet hvem som er avbildet og hvor og når bildet er tatt. I så fall vises denne informasjonen sammen med bildet. Andre bilder er uten noe informasjon. Da er teksten basert på antagelser.<br>
+ Bildene av mor er de mest sentrale, men noen fine, gamle bilder av av Flydal- og Reimersfamiliene har også fått plass.</p>
+      </div>
+
+<img class="w3-image" src="images/attest.jpg" alt="Fødselsattest" width="1000" height="714">
+<br><br>
+<img class="w3-image" src="images/anna1923.jpg" alt="Anna Cecilie 1923" width="1000" height="652">
+<br>
+<p class="w3-left-align w3-white w3-text-black">Dette er det eldste bildet av mor. Anna Cecilie er den lille jenta i hvit kjole. Bildet er tatt i juli 1923, så mor er 16 mnd gammel. De andre er Randi, Bastian med Otto på fanget og Emil med Leif.</p>
+      <br><br>
+<img class="w3-image" src="images/annaung.jpg" alt="Anna Cecilie 1924-25" width="1000" height="652">
+<br>
+<p class="w3-left-align w3-white w3-text-black">Anna Cecilie til venstre. De øvrige er Otto, Bernt, Leif og Randi. Bildet antas å være fra 1924-25. </p>
+<br>     
+
+<script>
+
+function myFunction() {
+
+  var x = document.getElementById("demo");
+
+  if (x.className.indexOf("w3-show") == -1) {
+
+    x.className += " w3-show";
+
+  } else { 
+
+    x.className = x.className.replace(" w3-show", "");
+
+  }
+
+}
+
+</script>
+
+
+
+</body>
+
+</html>
